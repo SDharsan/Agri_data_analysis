@@ -2,7 +2,6 @@ import pandas as pd
 import pymysql
 import streamlit as st
 import matplotlib.pyplot as plt
-import plotly.express as px
 import seaborn as sns
 
 # Database connection
@@ -32,11 +31,11 @@ def streamlit_app():
 
     # Key metrics
     total_records = fetch_data("SELECT COUNT(*) FROM agri_data;").iloc[0, 0]
-    total_rice_yield = fetch_data("SELECT SUM(rice_yield) FROM agri_data;").iloc[0, 0] or 0
-    total_wheat_yield = fetch_data("SELECT SUM(wheat_yield) FROM agri_data;").iloc[0, 0] or 0
-    total_cotton_yield = fetch_data("SELECT SUM(cotton_yield) FROM agri_data;").iloc[0, 0] or 0
-    total_groundnut_yield = fetch_data("SELECT SUM(groundnut_yield) FROM agri_data;").iloc[0, 0] or 0
-    total_maize_yield = fetch_data("SELECT SUM(maize_yield) FROM agri_data;").iloc[0, 0] or 0
+    total_rice_yield = fetch_data("SELECT SUM(rice_yield) FROM agri_data;").iloc[0, 0] 
+    total_wheat_yield = fetch_data("SELECT SUM(wheat_yield) FROM agri_data;").iloc[0, 0] 
+    total_cotton_yield = fetch_data("SELECT SUM(cotton_yield) FROM agri_data;").iloc[0, 0] 
+    total_groundnut_yield = fetch_data("SELECT SUM(groundnut_yield) FROM agri_data;").iloc[0, 0] 
+    total_maize_yield = fetch_data("SELECT SUM(maize_yield) FROM agri_data;").iloc[0, 0]
 
     st.subheader("Key Metrics")
 
