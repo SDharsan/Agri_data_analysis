@@ -1,4 +1,5 @@
-AgriData Explorer: Understanding Indian Agriculture with EDA
+***AgriData Explorer: Understanding Indian Agriculture with EDA***
+
 AgriData Explorer is an end-to-end agricultural analytics project focused on crop production, yield, and farming area in India. It combines Python-based EDA, SQL querying, and Power BI dashboards to identify high-performing states and districts, analyze long-term trends, and compare crop performance across regions.
 
 
